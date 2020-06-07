@@ -8,8 +8,9 @@ header {
 
 .sidenav {
   height: 100%;
-  width: 634px;
+  width: 30%;
   position: fixed;
+  float: left;
   z-index: 1;
   top: 0;
   left: 0;
@@ -18,8 +19,8 @@ header {
   background-image: url("images/alfa_pattern_white_rgb_2.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-position: -280px 400px;
-  background-size: 110%;
+  background-position: 0px bottom;
+  background-size: 40%;
 -webkit-box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 -moz-box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
@@ -27,7 +28,7 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 
 .sidenav-bg {
   height: 100%;
-  width: 634px;
+  width: 30%;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -56,22 +57,19 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 
 .sidenav a:hover {
   color: #EF3124;
-  background-color: #f1f1f1;
+  background-color: #fff;
 }
 
 .sidenav h1 {
   font-size: 56px; 
   padding-top: 50px;
-}
-
-.activeItem{
-   background-color:#999; /*make some difference for the active item here */
+  word-wrap: break-word;
 }
 
 .main {
-  margin: 0 0 100px 634px; /* Same as the width of the sidenav */
+  margin: 0 0 100px 0; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
-  padding: 80px 80px 0 180px;
+  padding: 80px 80px 0 40%;
   color: #0B1F35;
 }
 
@@ -104,14 +102,13 @@ position: relative;
 }
 
 .navitem {
-    display: flex;
-    flex-flow: row nowrap;
+    display: block;
+    flex-flow: row wrap;
     -moz-box-pack: start;
     justify-content: flex-start;
     -moz-box-align: center;
     align-items: center;
     transition: margin-left 0.3s ease 0s;
-    margin-bottom: 16px;
     margin-left: -10px;
 }
 
@@ -123,13 +120,44 @@ position: relative;
     max-width: 0px;
     opacity: 0;
     transform: translateX(-100%);
+    display: none;
 }
 
 .arrow:active {
   color: #0000FF;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
+.mobile {
+display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidenav {display: none;}
+  .mobile {
+  margin: 10px 10px 10px 3%;
+  display: block;
+  }
+  .red-logo {
+  margin: 13px 0 0 5px;
+  float: left;
+  }
+  .mobile-menu {
+  margin: 0 0 0 0;
+  position: relative;
+  text-align: center;
+  }
+  .mobile-menu h1 {
+  color: #EF3124;
+  font-style: italic;
+  font-size: 46px;
+  }
+  .main {
+  padding: 50px 10% 0 10%;
+  }
+  .card-1, .card-2 {
+  margin: 0 0 100px 0;
+  border: 0px;
+  position: relative;
+  width: auto;
+}
 }
