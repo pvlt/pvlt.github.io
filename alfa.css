@@ -78,7 +78,7 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 }
 
 .main {
-  margin: 0 0 100px 0; /* Same as the width of the sidenav */
+  margin: 0 10% 100px 0; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 80px 80px 0 40%;
   color: #0B1F35;
@@ -146,6 +146,25 @@ float: right;
 display: none;
 }
 
+ul.dashed {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.dashed > li {
+    margin-left: 20px;  
+}
+
+/* Prevent nested li's from getting messed up */
+ul.dashed > li::before {
+    content: "— ";
+    margin-left: -20px;
+}
+
+li {
+    margin-left: 15px;
+}
+
 @media screen and (max-device-width: 768px), screen and (max-device-height: 700px) {
   .sidenav {display: none;}
   .mobile {
@@ -184,7 +203,7 @@ display: none;
   display: none;
   margin: 0;
   text-align: left;
-  padding: 10px 10px 50px 3%;
+  padding: 10px 10px 30px 3%;
   color: #fff;
   font-size: 3.2vw;
   background-color: #d02b1c;
@@ -221,13 +240,13 @@ display: none;
   .offset:before { 
 	display: block; 
  	content: " "; 
-  	height: 90px;      /* Give height of your fixed element */
-    margin-top: -90px; /* Give negative margin of your fixed element */  	
+  	height: 50px;      /* Give height of your fixed element */
+    margin-top: -50px; /* Give negative margin of your fixed element */  	
     visibility: hidden; 
   }
   .card-1, .card-2 {
   margin: 0;
-  padding: 150px 0 0 0;
+  padding: 20px 0 0 0;
   border: 0px;
   position: relative;
   width: auto;
