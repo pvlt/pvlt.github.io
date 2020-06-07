@@ -6,6 +6,10 @@ body {
 header {
 }
 
+.logo {
+padding: 50px 10px 50px 10%;
+}
+
 .sidenav {
   height: 100%;
   width: 30%;
@@ -134,25 +138,65 @@ display: none;
 @media screen and (max-width: 1000px) {
   .sidenav {display: none;}
   .mobile {
-  margin: 10px 10px 10px 3%;
+  margin: 0;
   display: block;
+  background-color: #EF3124;
+  width: 100%;
+  padding: 0px 10px 7px 3%;
   }
   .red-logo {
   margin: 13px 0 0 5px;
   float: left;
+  min-width: 32px;
+  min-height: 48px;
   }
-  .mobile-menu {
-  margin: 0 0 0 0;
-  position: relative;
-  text-align: center;
-  }
-  .mobile-menu h1 {
-  color: #EF3124;
+  .dropbtn {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #EF3124;
+  color: #fff;
   font-style: italic;
   font-size: 46px;
   }
+  .mobile-menu {
+  position: relative;
+  text-align: center;
+  display: block;
+  }
+  .mobile-menu-content {
+  display: none;
+  margin: 25px 0 0 0;
+  text-align: left;
+  padding: 5px 10px 10px 15px;
+  color: #fff;
+  font-size: 3.2vw;
+  background-color: #EF3124;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  }
+  .mobile-menu-content a {
+  padding: 5px;
+  color: #fff;
+  font-style: italic;
+  }
+  .mobile-menu-content a:hover {
+  color: #EF3124;
+  background-color: #fff;
+  text-decoration: none;
+  }
+  .dropdown {
+  position: relative;
+  display: block;
+  }
+  .show {display: block;}
   .main {
   padding: 50px 10% 0 10%;
+  font-size: 3.2vw;
+  }
+  .main h1 {
+  font-size: 5vw;
   }
   .card-1, .card-2 {
   margin: 0 0 100px 0;
