@@ -146,7 +146,7 @@ float: right;
 display: none;
 }
 
-@media screen and (max-width: 768px) , screen and (max-height: 700px) {
+@media screen and (max-device-width: 768px), screen and (max-device-height: 700px) {
   .sidenav {display: none;}
   .mobile {
   position: fixed;
