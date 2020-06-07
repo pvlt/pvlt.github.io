@@ -93,16 +93,20 @@ opacity: 0.5;
 
 .card-1 {
 margin: 0px 0px 100px;
+padding: 0 20% 0 0;
 border: 0px;
-width: 550px;
+width: 100%;
 position: relative;
+float: left;
 }
 
 .card-2 {
-margin: 0px 0px 100px 400px;
+margin: 0px 0px 100px 0px;
+padding: 0 0 0 20%;
 border: 0px;
-width: 550px;
+width: 100%;
 position: relative;
+float: right;
 }
 
 .navitem {
