@@ -33,7 +33,7 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
   top: 0;
   left: 0;
   overflow-x: hidden;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,.4) 80%);
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 35%, rgba(0,0,0,.5) 80%);
 }   
 
 .sidemenu {
@@ -66,7 +66,7 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 
 .main {
   margin-left: 634px; /* Same as the width of the sidenav */
-  font-size: 28px; /* Increased text to enable scrolling */
+  font-size: 20px; /* Increased text to enable scrolling */
   padding: 80px 80px 0 180px;
   color: #0B1F35;
 }
@@ -75,6 +75,28 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 font-weight: 900;
 font-size: 36px;
 margin: 0px 0px 36px;
+}
+
+.main p {
+margin: 0px 0px 100px;
+}
+
+.main img {
+opacity: 0.5;
+}
+
+.card-1 {
+margin: 0px 0px 100px;
+border: 0px;
+width: 550px;
+position: relative;
+}
+
+.card-2 {
+margin: 0px 0px 100px 400px;
+border: 0px;
+width: 550px;
+position: relative;
 }
 
 @media screen and (max-height: 450px) {
