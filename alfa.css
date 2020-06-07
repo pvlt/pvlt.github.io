@@ -46,17 +46,17 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 }
 
 .sidemenu a {
-  padding: 0;
+  padding: 8px 10px 8px 10px;
   text-decoration: none;
   font-size: 25px;
   color: #fff;
   display: block;
   font-family: 'Styrene A Web';
-  margin-bottom: 16px;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: #EF3124;
+  background-color: #f1f1f1;
 }
 
 .sidenav h1 {
@@ -64,8 +64,12 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
   padding-top: 50px;
 }
 
+.activeItem{
+   background-color:#999; /*make some difference for the active item here */
+}
+
 .main {
-  margin-left: 634px; /* Same as the width of the sidenav */
+  margin: 0 0 100px 634px; /* Same as the width of the sidenav */
   font-size: 20px; /* Increased text to enable scrolling */
   padding: 80px 80px 0 180px;
   color: #0B1F35;
@@ -78,7 +82,7 @@ margin: 0px 0px 36px;
 }
 
 .main p {
-margin: 0px 0px 100px;
+margin: 0px 0px 36px;
 }
 
 .main img {
@@ -97,6 +101,32 @@ margin: 0px 0px 100px 400px;
 border: 0px;
 width: 550px;
 position: relative;
+}
+
+.navitem {
+    display: flex;
+    flex-flow: row nowrap;
+    -moz-box-pack: start;
+    justify-content: flex-start;
+    -moz-box-align: center;
+    align-items: center;
+    transition: margin-left 0.3s ease 0s;
+    margin-bottom: 16px;
+    margin-left: -10px;
+}
+
+.arrow {
+    transition: all 0.2s ease 0s;
+    margin: 0px;
+    height: 20px;
+    flex: 0 0 0px;
+    max-width: 0px;
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.arrow:active {
+  color: #0000FF;
 }
 
 @media screen and (max-height: 450px) {
