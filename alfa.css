@@ -138,14 +138,19 @@ display: none;
 @media screen and (max-width: 1000px) {
   .sidenav {display: none;}
   .mobile {
+  position: fixed;
   margin: 0;
   display: block;
-  background-color: #EF3124;
+  background-color: #d02b1c;
   width: 100%;
-  padding: 0px 10px 7px 3%;
+  padding: 0px;
+  -webkit-box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.39);
+  -moz-box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.39);
+  box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.39);
+  z-index: 1;
   }
   .red-logo {
-  margin: 13px 0 0 5px;
+  margin: 10px 7px 0 3%;
   float: left;
   min-width: 32px;
   min-height: 48px;
@@ -154,7 +159,7 @@ display: none;
   color: white;
   border: none;
   cursor: pointer;
-  background-color: #EF3124;
+  background-color: #d02b1c;
   color: #fff;
   font-style: italic;
   font-size: 46px;
@@ -166,15 +171,19 @@ display: none;
   }
   .mobile-menu-content {
   display: none;
-  margin: 25px 0 0 0;
+  margin: 0;
   text-align: left;
-  padding: 5px 10px 10px 15px;
+  padding: 10px 10px 50px 3%;
   color: #fff;
   font-size: 3.2vw;
-  background-color: #EF3124;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  background-color: #d02b1c;
+  width: 100%;
   z-index: 1;
+  background-image: url("images/alfa_pattern_white_rgb_2.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0px 50px;
+  background-size: 100%;
   }
   .mobile-menu-content a {
   padding: 5px;
@@ -192,14 +201,22 @@ display: none;
   }
   .show {display: block;}
   .main {
-  padding: 50px 10% 0 10%;
+  padding: 100px 10% 0 10%;
   font-size: 3.2vw;
   }
   .main h1 {
   font-size: 5vw;
   }
+  .offset:before { 
+	display: block; 
+ 	content: " "; 
+  	height: 90px;      /* Give height of your fixed element */
+    margin-top: -90px; /* Give negative margin of your fixed element */  	
+    visibility: hidden; 
+  }
   .card-1, .card-2 {
-  margin: 0 0 100px 0;
+  margin: 0;
+  padding: 150px 0 0 0;
   border: 0px;
   position: relative;
   width: auto;
