@@ -66,8 +66,15 @@ box-shadow: 13px 0px 68px 0px rgba(0,0,0,0.39);
 
 .sidenav h1 {
   font-size: 56px; 
-  padding-top: 50px;
-  word-wrap: break-word;
+  padding-top: 40px;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    white-space: pre-wrap;       /* css-3 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+    word-break: break-all;
+    white-space: normal;
 }
 
 .main {
@@ -139,7 +146,7 @@ float: right;
 display: none;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 768px) , screen and (max-height: 700px) {
   .sidenav {display: none;}
   .mobile {
   position: fixed;
