@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Serifiqo 4k'; 
+    src: url("Serifiqo.otf") format("opentype");
+    font-style: normal;
+}
+
+body,h2,h3,p {
+    font-family: "Serifiqo 4k";
+    text-shadow: 0 0 2px #fff;
+}
+h1 {
+    font-family: "Serifiqo 4k";
+    font-weight: 600;
+    text-shadow: 0 0 2px #fff;
+    margin-top: 50px;
+}
+p {
+font-size: 25px;
+}
+img {margin-bottom: 0px}
+.w3-row-padding {margin-bottom: 0px}
+.w3-row div {
+margin-right: 5px;
+float: left;
+}
+
+body {
+	background-image: url("images/bg.png");
+	background-position: bottom;
+    background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	color: white;
+}
+
+.w3-content {
+	padding: 15px;
+}
