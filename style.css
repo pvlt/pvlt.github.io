@@ -25,12 +25,12 @@ float: left;
 }
 
 body {
+	color: white;
 	background-image: url("images/bg.png");
 	background-position: bottom;
     background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
-	color: white;
 }
 
 .w3-content {
