@@ -1,15 +1,17 @@
 @font-face {
-    font-family: 'Serifiqo 4k'; 
+/*   font-family: 'Serifiqo 4k';   
     src: url("Serifiqo.otf") format("opentype");
+ */
+    font-family: 'NotCourierSansRegular';
     font-style: normal;
 }
 
 body,h2,h3,p {
-    font-family: "Serifiqo 4k";
+    font-family: "NotCourierSansRegular";
     text-shadow: 0 0 2px #fff;
 }
 h1 {
-    font-family: "Serifiqo 4k";
+    font-family: "NotCourierSansRegular";
     font-weight: 600;
     text-shadow: 0 0 2px #fff;
     margin-top: 50px;
