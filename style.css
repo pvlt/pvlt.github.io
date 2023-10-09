@@ -118,8 +118,10 @@ body {
 
 .grid-item--width1 { width: 60%; }
 .grid-item--height1 { height: auto; }
-.grid-item--width2 { width: auto; }
+.grid-item--width2 { width: 400px; }
 .grid-item--height2 { height: auto; }
+.grid-item--width3 { width: 400px; }
+.grid-item--height3 { height: 750px; }
 
 .cards {
 	display: flex;
