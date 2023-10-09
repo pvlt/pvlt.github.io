@@ -122,6 +122,9 @@ body {
 .grid-item--height2 { height: auto; }
 .grid-item--width3 { width: 400px; }
 .grid-item--height3 { height: 750px; }
+.grid-item--width4 { width: 100%; }
+.grid-item--height4 { height: auto; }
+
 
 .cards {
 	display: flex;
@@ -310,7 +313,9 @@ body {
 	
 	.grid-item--width1 { width: 100%; }
 	.grid-item--width2 { width: 100%; }
-	
+	.grid-item--width4 { width: 100%; }
+	.grid-item--width4 { height: auto; }
+
 	.links {
 	display: none;
 	}
