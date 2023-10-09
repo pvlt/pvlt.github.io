@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap');
 
+
 /* css code */
 * {
   margin: 0;
@@ -35,6 +36,25 @@ body {
 	padding: 3% auto;
 	display: flex;
 	flex-wrap: wrap;
+}
+      
+.marked {
+  position: relative;background-color: none;
+}
+
+
+.marked::before {
+  /* Highlight color */
+  background-color: rgba(0, 255, 255, 0.3);
+  font-weight: normal;
+  content: "";
+  position: absolute;
+  width: calc(100% + 4px);
+  height: 60%;
+  left: -2px;
+  bottom: 0;
+  z-index: -1;
+  transform: rotate(1.2deg);
 }
 
 .title {
@@ -207,6 +227,7 @@ body {
   border: 2px solid black;
   border-bottom: none;
   color: #black;
+  	  border-radius: 7px 7px 0 0;
 }
  
 .tabs input[type="radio"]:checked + label + .tab {
